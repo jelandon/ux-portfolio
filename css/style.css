@@ -1,0 +1,444 @@
+@import url(//db.onlinewebfonts.com/c/bf35ddaa105b41dd66cb2eb93424c588?family=American+Typewriter);
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+@font-face {font-family: "American Typewriter"; src: url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.eot"); src: url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.woff") format("woff"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bf35ddaa105b41dd66cb2eb93424c588.svg#American Typewriter") format("svg"); }
+
+* {
+	font-family: 'Jost', sans-serif;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+	/* overflow-x: hidden; */
+	/* font-size: 14px; */
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	/* background-color: #0099cc; */
+	height: 100px;
+	justify-content: space-between;
+	width: 100%;
+}
+
+header.work {
+	background-color: #008A23;
+
+}
+
+header.about{
+	background-color: #D41547;
+
+}
+
+header.axiom {
+	background-color: white;
+}
+
+header a#logo {
+	height: 100px;
+	width: 100px;
+}
+
+#logo img {
+	padding: 10px;
+	opacity: 1;
+	transition: all .3s ease-out;
+}
+
+#logo img:hover {
+	opacity: .75
+}
+
+header li {
+	list-style: none;
+	display: inline-block;
+	padding: 1em;
+}
+
+header li a {
+	color: #0099cc;
+	font-weight: 600;
+	font-size: 1rem;
+	text-decoration: none;
+	opacity: 1;
+	transition: all .3s ease-out;
+}
+
+header.work li a {
+	color: white;
+}
+
+header.about li a {
+	color: white;
+}
+
+.svg {
+	fill: #0099cc;
+}
+
+.axiom .svg{
+	fill: #002E5F;
+}
+header.axiom li a {
+	color: #002E5F;
+}
+
+header li a:hover{
+	opacity: .75;
+}
+
+header li a.email {
+	font-size: 1rem;
+	text-decoration: underline;
+
+}
+.current {
+	opacity: .75;
+}
+
+
+
+main{
+	padding: 0 1em;
+	width: 100vw;
+	min-height: calc(100vh - 100px);
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.splash {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 24px;
+	font-weight: 100;
+	position: absolute;
+	margin: 0 auto;
+	top: calc(50% - 100px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+
+.left-splash {
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+.right-splash {
+	text-align: left;
+}
+
+s, strike {
+  text-decoration:none;
+  position:relative;
+
+}
+
+s::before, strike::before {
+  top: 50%; /*tweak this to adjust the vertical position if it's off a bit due to your font family */
+	background:rgba(0,153,204,.5);
+	opacity:.7;
+  content: '';
+  width: 110%;
+  position: absolute;
+  height:.1em;
+  border-radius:.1em;
+  left: -5%;
+  white-space:nowrap;
+  display: block;
+  transform: rotate(-3deg);
+}
+
+s.straight::before, strike.straight::before {
+  transform: rotate(0deg);
+  left:-1%;
+  width:100%;
+}
+
+.strikethrough {
+	color: #BFBFBF;
+	text-decoration-color: rgba(0, 0, 0, 0.25);
+}
+
+.answer {
+	font-weight: 900;
+	color: #0099cc;
+}
+
+/*
+h1 {
+
+	text-align:left;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+	padding: 2rem 0 1.5rem 0;
+} */
+h2 {
+	font-size:1.5em;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+}
+h2 b {
+	padding-right: 10px;
+	color: #F31431;
+}
+
+p {
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+	font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+	display: flex;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.arrow-cont{
+	position: absolute;
+	bottom: 1em;
+	left: 48%;
+}
+.arrow {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+	border-top: 20px solid #0099cc;
+  }
+
+  .arrow:after {
+	content:" ";
+	display:block;
+	margin:-20px 0 0 -12px;
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+
+	border-top: 12px solid white;
+  }
+
+/* h3 {
+	font-family: 'Quando', sans-serif;
+} */
+
+
+
+#recent{
+	/* padding: 0 1em; */
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1em;
+}
+
+#recent h1 {
+	color: #008A23;
+
+}
+
+.ex-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.example {
+	width: 33%;
+	height:auto;
+	max-width: 250px;
+	max-height: 250px;
+	/* border: 10px solid white; */
+	position: relative;
+	box-shadow: 0 0 10px rgba(0,0,0,.25);
+	transition: all .3s ease-out;
+	border-radius: 2px;
+}
+
+.example:hover {
+
+	box-shadow: 0 0 15px rgba(0,0,0,.5);
+
+}
+
+.example a {
+	color: white;
+}
+.example a:visited {
+	color: white;
+}
+
+.example img {
+		width: 100%;
+		height: auto;
+		border-radius: 2px;
+	}
+
+.example h4 {
+	position: absolute;
+	top: 37%;
+	width: 100%;
+	margin: 0;
+	opacity: 0;
+	padding: 1em 0;
+	font-family: 'quando', sans-serif;
+	transition: all .3s ease-out;
+	background-color: rgba(0,0,0,.5)
+}
+
+.example:hover h4{
+	opacity: 1;
+}
+
+.example:hover h4 span {
+	display: block;
+	font-size: .66rem;
+}
+
+
+
+#about{
+	/* padding: 0 1em; */
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1em;
+}
+
+#about h1 {
+	color: #D41547;
+}
+.about-flex {
+	display: flex;
+	justify-content: space-between;
+}
+.surreal {
+	width: 100%;
+	height: 354px;
+	max-width: 960px;
+    background-image: url("../images/surreal.gif");
+    background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+}
+.about-flex p{
+	width: 70%;
+	text-align: left;
+	padding-left: 2rem;
+	line-height: 30px;
+}
+
+#axiom{
+	/* padding: 0 1em; */
+	width: 100%;
+	max-width: 1000px;
+	margin: 0;
+	text-align: center;
+	padding: 1em;
+}
+
+#axiom h1 {
+	color: #002E5F;
+}
+
+#axiom .color-bar {
+	background-color: #002E5F;
+	width: 100vw;
+	height: 150px;
+	position: absolute;
+	left: 0;
+}
+
+.color-bar img {
+	position: absolute;
+	bottom: -110px;
+	/* right: 15%; */
+	width: auto;
+	right: 0;
+	height: 300px;
+}
+
+#axiom p.subhead {
+	text-align: left;
+	/* width: 30rem; */
+	padding-bottom: 1rem;
+}
+
+#axiom h5 {
+	position: relative;
+	top: 175px;
+	text-align: left;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+	font-size: 3em;
+	font-variant: all-small-caps;
+	color: #002E5F;
+	font-weight: 700;
+
+}
+#axiom h6 {
+	position: relative;
+	top: 175px;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+	text-align: left;
+	font-size: 1em;
+	/* color: #002E5F; */
+	font-weight: 600;
+	font-family: 'Quando', sans-serif;
+	margin-bottom: 1rem;
+}
+
+#axiom p.role {
+	position: relative;
+	text-align: left;
+	top: 180px;
+	line-height: 40px;
+	padding-bottom: 1rem;
+}
+
+#ia {
+	position: relative;
+	margin-top: 150px;
+}
+
+.lofi-cont {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.lofi-ex {
+	padding: .25em;
+	width: 25%;
+	height: 25%;
+}
